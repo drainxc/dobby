@@ -26,7 +26,6 @@ export default function Time() {
   counting();
 
   useEffect(() => {
-    const data = {};
     setTime({
       year: fillZero(2022 - now.getFullYear()),
       month: fillZero(3 - now.getMonth() - 1),
