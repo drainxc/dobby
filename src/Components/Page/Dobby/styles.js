@@ -9,7 +9,7 @@ export const MainDiv = styled.div`
 
 export const Title = styled.div`
   color: #57a0ce;
-  font-size: 100px;
+  font-size: 120px;
   font-weight: bold;
 `;
 
