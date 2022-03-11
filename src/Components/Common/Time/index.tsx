@@ -24,6 +24,17 @@ export default function Time() {
 
   counting();
 
+  useEffect(() => {
+    const data = {};
+    setTime({
+      year: fillZero(2022 - now.getFullYear()),
+      month: fillZero(3 - now.getMonth() - 1),
+      day: fillZero(14 - now.getDate() - 1),
+      hours: fillZero(14 - now.getHours() - 1),
+      minutes: fillZero(60 - now.getMinutes() - 1),
+      seconds: fillZero(60 - now.getSeconds()),
+    });
+  }, [count]);
 
   function fillZero(num: number): string {
     return 10 <= num ? `${num}` : "0" + `${num}`;
