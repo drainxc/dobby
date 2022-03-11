@@ -37,14 +37,12 @@ export default function Time() {
     });
   }, [count]);
 
-  
-
   function counting() {
     setInterval(() => {
       setCount(count + 1);
     }, 1000);
   }
-
+  
   return (
     <>
       <S.Time>
