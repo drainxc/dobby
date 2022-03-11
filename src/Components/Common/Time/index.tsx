@@ -12,7 +12,7 @@ export default function Time() {
     minutes: "0",
     seconds: "0",
   });
-
+  
   type timeType = {
     year: string;
     month: string;
@@ -21,6 +21,14 @@ export default function Time() {
     minutes: string;
     seconds: string;
   };
+
+  counting();
+
+  function counting() {
+    setInterval(() => {
+      setCount(count + 1);
+    }, 1000);
+  }
 
   return (
     <>
