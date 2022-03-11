@@ -4,8 +4,7 @@ import GlobalStyle from "./Style/styles";
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <Dobby />
+      <div>asdf</div>
     </>
   );
 }
