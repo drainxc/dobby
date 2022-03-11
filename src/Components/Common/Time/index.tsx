@@ -24,6 +24,11 @@ export default function Time() {
 
   counting();
 
+
+  function fillZero(num: number): string {
+    return 10 <= num ? `${num}` : "0" + `${num}`;
+  }
+
   function counting() {
     setInterval(() => {
       setCount(count + 1);
