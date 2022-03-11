@@ -1,6 +1,6 @@
-import * as S from "./styles";
+import * as S from "./styles"
 import { useEffect, useState } from "react";
-import { fillZero } from "../../../Library/Function/fillzero";
+import { fillZero } from "../../../lib/function/fillzero";
 
 export default function Time() {
   const now = new Date();

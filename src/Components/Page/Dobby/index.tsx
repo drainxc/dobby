@@ -1,5 +1,5 @@
-import Time from "../../Common/Time";
-import * as S from "./styles";
+import Time from "../../common/Time";
+import * as S from "./styles"
 
 export default function Dobby() {
   return (

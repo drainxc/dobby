@@ -1,10 +1,11 @@
-import Dobby from "./Components/Page/Dobby";
-import GlobalStyle from "./Style/styles";
+import Dobby from "./components/page/dobby";
+import GlobalStyle from "./style/styles";
 
 function App() {
   return (
     <>
-      <div>asdf</div>
+      <GlobalStyle />
+      <Dobby />
     </>
   );
 }
