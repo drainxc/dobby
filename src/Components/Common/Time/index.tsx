@@ -1,5 +1,6 @@
 import * as S from "./styles";
 import { useEffect, useState } from "react";
+import { fillZero } from "../../../Library/Function/fillzero";
 
 export default function Time() {
   const now = new Date();
@@ -12,7 +13,7 @@ export default function Time() {
     minutes: "0",
     seconds: "0",
   });
-  
+
   type timeType = {
     year: string;
     month: string;
@@ -36,9 +37,7 @@ export default function Time() {
     });
   }, [count]);
 
-  function fillZero(num: number): string {
-    return 10 <= num ? `${num}` : "0" + `${num}`;
-  }
+  
 
   function counting() {
     setInterval(() => {
