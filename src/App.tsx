@@ -1,6 +1,3 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import Dobby from "./Components/Page/Dobby";
 import GlobalStyle from "./Style/styles";
 
